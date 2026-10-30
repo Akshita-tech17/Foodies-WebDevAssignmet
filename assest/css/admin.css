@@ -1,0 +1,244 @@
+/* ==============================
+   FOODIES ADMIN PANEL
+   Clean, modern and spacious UI
+================================ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 32px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f6f7fb;
+    color: #252b36;
+    line-height: 1.6;
+}
+
+/* Main content spacing */
+body > h1,
+body > h2,
+body > p,
+body > form,
+body > table,
+body > section,
+body > div {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 750;
+    color: #202633;
+    margin-top: 12px;
+    margin-bottom: 28px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-top: 32px;
+    margin-bottom: 18px;
+    color: #292f3b;
+}
+
+p {
+    color: #606a79;
+}
+
+/* Links */
+a {
+    color: #e65d20;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #bf4310;
+}
+
+/* Buttons */
+button,
+input[type="submit"],
+input[type="button"] {
+    border: none;
+    border-radius: 9px;
+    padding: 11px 18px;
+    background: #f26a2c;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 650;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background: #dc5419;
+    transform: translateY(-1px);
+}
+
+/* Forms and input fields */
+input:not([type="submit"]):not([type="button"]):not([type="checkbox"]),
+select,
+textarea {
+    width: 100%;
+    max-width: 420px;
+    padding: 12px 14px;
+    margin-top: 6px;
+    border: 1px solid #dce1e9;
+    border-radius: 9px;
+    background: #fff;
+    color: #252b36;
+    font: inherit;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #f26a2c;
+    box-shadow: 0 0 0 3px rgba(242, 106, 44, 0.12);
+}
+
+label {
+    display: inline-block;
+    margin-top: 12px;
+    color: #414958;
+    font-weight: 600;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    max-width: 1250px;
+    margin: 22px auto 32px;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #fff;
+    border: 1px solid #e8ebf1;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(30, 40, 60, 0.04);
+}
+
+th {
+    background: #fff1e9;
+    color: #773719;
+    text-align: left;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    padding: 16px;
+}
+
+td {
+    padding: 15px 16px;
+    border-top: 1px solid #edf0f4;
+    color: #414958;
+    vertical-align: middle;
+}
+
+tr:hover td {
+    background: #fffaf7;
+}
+
+/* Status labels */
+.status,
+.badge {
+    display: inline-block;
+    padding: 5px 11px;
+    border-radius: 20px;
+    background: #fff0e7;
+    color: #b94b18;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* Dashboard cards */
+.dashboard-cards,
+.stats-container,
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 22px;
+    margin: 24px auto 34px;
+}
+
+.dashboard-card,
+.stat-card,
+.card {
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #e9ecf2;
+    border-radius: 16px;
+    box-shadow: 0 6px 22px rgba(30, 40, 60, 0.045);
+}
+
+.dashboard-card h3,
+.stat-card h3,
+.card h3 {
+    margin: 0 0 10px;
+    color: #727b89;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.dashboard-card p,
+.stat-card p,
+.card p {
+    margin: 0;
+    color: #e65d20;
+    font-size: 28px;
+    font-weight: 750;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Horizontal overflow for tables on small screens */
+@media (max-width: 768px) {
+    body {
+        padding: 18px 14px;
+    }
+
+    h1 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th,
+    td {
+        padding: 12px;
+    }
+
+    .dashboard-cards,
+    .stats-container,
+    .cards-container {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    button,
+    input[type="submit"] {
+        max-width: 100%;
+    }
+}

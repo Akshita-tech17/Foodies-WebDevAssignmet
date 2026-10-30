@@ -1,0 +1,165 @@
+/* =========================
+FOODIES - ORDER SUCCESS
+========================= */
+
+body.order-success-page {
+margin: 0;
+min-height: 100vh;
+padding: 35px 18px;
+box-sizing: border-box;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: Arial, Helvetica, sans-serif;
+background: #fff8f2;
+color: #292421;
+}
+
+.order-success-page * {
+box-sizing: border-box;
+}
+
+.order-success-page .success-card {
+width: 100%;
+max-width: 620px;
+padding: 38px;
+background: #ffffff;
+border: 1px solid #f1e3d8;
+border-radius: 20px;
+text-align: center;
+box-shadow: 0 12px 35px rgba(70, 40, 20, 0.08);
+}
+
+.order-success-page .success-icon {
+width: 76px;
+height: 76px;
+margin: 0 auto 22px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+background: #e4f8e9;
+color: #218838;
+font-size: 42px;
+font-weight: bold;
+}
+
+.order-success-page h1 {
+margin: 0 0 15px;
+color: #218838;
+font-size: 30px;
+line-height: 1.3;
+}
+
+.order-success-page .thank-you {
+margin: 10px 0;
+font-size: 19px;
+font-weight: 600;
+}
+
+.order-success-page .success-message {
+margin: 0 0 28px;
+color: #766b63;
+font-size: 15px;
+line-height: 1.6;
+}
+
+.order-success-page .order-details {
+padding: 22px;
+margin-bottom: 28px;
+border-radius: 14px;
+background: #fffaf6;
+border: 1px solid #f0e4da;
+text-align: left;
+}
+
+.order-success-page .order-details h2 {
+margin: 0 0 18px;
+font-size: 21px;
+color: #292421;
+}
+
+.order-success-page .detail-row {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+gap: 15px;
+padding: 13px 0;
+border-bottom: 1px solid #eee3da;
+}
+
+.order-success-page .detail-row:last-child {
+border-bottom: none;
+}
+
+.order-success-page .detail-row span {
+color: #766b63;
+}
+
+.order-success-page .detail-row strong {
+text-align: right;
+overflow-wrap: anywhere;
+}
+
+.order-success-page .order-amount {
+color: #e85d04;
+font-size: 18px;
+}
+
+.order-success-page .order-status {
+color: #218838;
+text-transform: capitalize;
+}
+
+.order-success-page .continue-shopping {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 9px;
+background: #e85d04;
+color: #ffffff;
+text-decoration: none;
+font-size: 15px;
+font-weight: 600;
+transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.order-success-page .continue-shopping:hover {
+background: #c94d00;
+transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+body.order-success-page {
+padding: 20px 12px;
+}
+
+.order-success-page .success-card {
+    padding: 25px 18px;
+    border-radius: 15px;
+}
+
+.order-success-page h1 {
+    font-size: 25px;
+}
+
+.order-success-page .success-icon {
+    width: 65px;
+    height: 65px;
+    font-size: 35px;
+}
+
+.order-success-page .order-details {
+    padding: 16px;
+}
+
+.order-success-page .detail-row {
+    gap: 10px;
+    font-size: 14px;
+}
+
+.order-success-page .continue-shopping {
+    width: 100%;
+    padding: 14px 12px;
+}
+
+}

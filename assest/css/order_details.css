@@ -1,0 +1,324 @@
+/* =========================
+FOODIES - ORDER DETAILS
+========================= */
+
+body.order-details-page {
+margin: 0;
+min-height: 100vh;
+padding: 35px 18px;
+background: #fff8f2;
+color: #292421;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.order-details-page * {
+box-sizing: border-box;
+}
+
+.order-details-page .order-container {
+width: 100%;
+max-width: 850px;
+margin: 0 auto;
+}
+
+.order-details-page .order-header {
+margin-bottom: 25px;
+}
+
+.order-details-page .page-label {
+margin: 0 0 10px;
+color: #e85d04;
+font-size: 12px;
+font-weight: 700;
+letter-spacing: 1.5px;
+}
+
+.order-details-page .order-header h1 {
+margin: 0 0 10px;
+font-size: 34px;
+}
+
+.order-details-page .order-number {
+margin: 0;
+color: #766b63;
+font-size: 15px;
+}
+
+.order-details-page .order-status-card {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+gap: 22px;
+padding: 22px 25px;
+margin-bottom: 22px;
+background: #fff0df;
+border: 1px solid #f4ddc8;
+border-radius: 14px;
+}
+
+.order-details-page .order-status-card > div {
+display: flex;
+flex-direction: column;
+gap: 9px;
+min-width: 0;
+}
+
+.order-details-page .detail-label {
+color: #766b63;
+font-size: 13px;
+}
+
+.order-details-page .status-value {
+color: #d65300;
+font-size: 17px;
+text-transform: capitalize;
+}
+
+.order-details-page .order-status-card strong {
+overflow-wrap: anywhere;
+}
+
+.order-details-page .details-card {
+padding: 25px;
+margin-bottom: 22px;
+background: #ffffff;
+border: 1px solid #f1e3d8;
+border-radius: 15px;
+box-shadow: 0 5px 18px rgba(70, 40, 20, 0.04);
+}
+
+.order-details-page .details-card h2 {
+display: flex;
+align-items: center;
+gap: 10px;
+margin: 0 0 22px;
+font-size: 21px;
+}
+
+.order-details-page .section-icon {
+font-size: 21px;
+}
+
+.order-details-page .delivery-info {
+display: flex;
+flex-direction: column;
+gap: 0;
+}
+
+.order-details-page .info-row {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+gap: 20px;
+padding: 14px 0;
+border-bottom: 1px solid #f0e7e0;
+}
+
+.order-details-page .info-row:last-child {
+border-bottom: none;
+}
+
+.order-details-page .info-row > span {
+flex-shrink: 0;
+color: #766b63;
+font-size: 14px;
+}
+
+.order-details-page .info-row strong {
+max-width: 70%;
+text-align: right;
+overflow-wrap: anywhere;
+line-height: 1.6;
+}
+
+.order-details-page .delivery-address {
+white-space: normal;
+}
+
+.order-details-page .food-list {
+display: flex;
+flex-direction: column;
+}
+
+.order-details-page .food-item {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 18px;
+padding: 19px 0;
+border-bottom: 1px solid #f0e7e0;
+}
+
+.order-details-page .food-item:first-child {
+padding-top: 0;
+}
+
+.order-details-page .food-item:last-child {
+padding-bottom: 0;
+border-bottom: none;
+}
+
+.order-details-page .food-info {
+min-width: 0;
+}
+
+.order-details-page .food-info h3 {
+margin: 0 0 8px;
+font-size: 17px;
+overflow-wrap: anywhere;
+}
+
+.order-details-page .food-info p {
+margin: 5px 0;
+color: #766b63;
+font-size: 14px;
+line-height: 1.5;
+}
+
+.order-details-page .food-info .food-quantity {
+color: #a64a12;
+}
+
+.order-details-page .food-subtotal {
+flex-shrink: 0;
+color: #292421;
+font-size: 16px;
+}
+
+.order-details-page .empty-message {
+margin: 0;
+color: #766b63;
+line-height: 1.6;
+}
+
+.order-details-page .total-card {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 15px;
+padding: 24px 25px;
+margin-bottom: 25px;
+background: #ffffff;
+border: 1px solid #f1e3d8;
+border-radius: 14px;
+}
+
+.order-details-page .total-card span {
+font-size: 17px;
+font-weight: 600;
+}
+
+.order-details-page .total-card strong {
+color: #e85d04;
+font-size: 25px;
+overflow-wrap: anywhere;
+}
+
+.order-details-page .order-navigation {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+gap: 15px;
+}
+
+.order-details-page .order-navigation a {
+display: inline-block;
+padding: 12px 18px;
+border-radius: 8px;
+font-size: 14px;
+font-weight: 600;
+text-decoration: none;
+transition: background 0.2s, color 0.2s;
+}
+
+.order-details-page .back-orders {
+color: #d65300;
+border: 1px solid #edc9ad;
+background: #ffffff;
+}
+
+.order-details-page .back-orders:hover {
+background: #fff0df;
+}
+
+.order-details-page .home-button {
+color: #ffffff;
+background: #e85d04;
+}
+
+.order-details-page .home-button:hover {
+background: #c94d00;
+}
+
+@media (max-width: 560px) {
+body.order-details-page {
+padding: 25px 13px;
+}
+
+.order-details-page .order-header h1 {
+    font-size: 29px;
+}
+
+.order-details-page .order-status-card,
+.order-details-page .details-card {
+    padding: 19px;
+}
+
+.order-details-page .order-status-card {
+    flex-direction: column;
+    gap: 18px;
+}
+
+.order-details-page .details-card h2 {
+    font-size: 19px;
+}
+
+.order-details-page .info-row {
+    gap: 12px;
+}
+
+.order-details-page .info-row > span {
+    font-size: 13px;
+}
+
+.order-details-page .info-row strong {
+    max-width: 65%;
+    font-size: 14px;
+}
+
+.order-details-page .food-item {
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.order-details-page .food-info h3 {
+    font-size: 16px;
+}
+
+.order-details-page .food-subtotal {
+    font-size: 14px;
+}
+
+.order-details-page .total-card {
+    padding: 20px;
+}
+
+.order-details-page .total-card span {
+    font-size: 15px;
+}
+
+.order-details-page .total-card strong {
+    font-size: 21px;
+}
+
+.order-details-page .order-navigation {
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.order-details-page .order-navigation a {
+    text-align: center;
+}
+
+}
