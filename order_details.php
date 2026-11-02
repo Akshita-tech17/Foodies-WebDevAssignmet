@@ -74,7 +74,7 @@ function e($value): string {
 
     <title>Order Details - Foodies</title>
 
-    <link rel="stylesheet" href="/phpt/Foodies-WebDevAssignmet/assest/css/order_details.css">
+    <link rel="stylesheet" href="assest/css/order_details.css">
 </head>
 
 <body class="order-details-page">

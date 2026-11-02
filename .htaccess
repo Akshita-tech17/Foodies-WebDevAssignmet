@@ -1,0 +1,14 @@
+# Prevent directory browsing
+Options -Indexes
+
+# Protect sensitive files and directories
+<FilesMatch "(\.(sql|env|ini|log|git|md)|db\.php)$">
+    Require all denied
+</FilesMatch>
+
+# Protect database and config folders
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(database|config)/ - [F,L]
+</IfModule>
+

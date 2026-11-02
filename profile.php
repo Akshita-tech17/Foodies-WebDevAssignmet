@@ -89,7 +89,7 @@ function e($value): string {
 
     <title>My Profile - Foodies</title>
 
-    <link rel="stylesheet" href="/phpt/Foodies-WebDevAssignmet/assest/css/profile.css">
+    <link rel="stylesheet" href="assest/css/profile.css">
 </head>
 
 <body class="profile-page">

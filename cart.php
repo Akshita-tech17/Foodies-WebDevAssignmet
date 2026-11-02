@@ -27,7 +27,7 @@ $total = 0;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Cart - Foodies</title>
 
-    <link rel="stylesheet" href="/phpt/Foodies-WebDevAssignmet/assest/css/cart.css">
+    <link rel="stylesheet" href="assest/css/cart.css">
 </head>
 
 <body class="cart-page">
@@ -147,6 +147,6 @@ $total = 0;
 <?php
 $stmt->close();
 ?>
-<script src="/phpt/Foodies-WebDevAssignmet/assest/js/cart.js"></script>
+<script src="assest/js/cart.js"></script>
 </body>
 </html>

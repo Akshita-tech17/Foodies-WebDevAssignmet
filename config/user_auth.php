@@ -6,7 +6,7 @@ if (session_status() === PHP_SESSION_NONE) {
 require_once __DIR__ . "/db.php";
 
 if (!isset($_SESSION["user_id"])) {
-    header("Location: ../login.php");
+    header("Location: login.php");
     exit;
 }
 
@@ -53,7 +53,7 @@ if (!$user || (int) $user["is_active"] !== 1) {
 
     session_destroy();
 
-    header("Location: ../login.php");
+    header("Location: login.php");
     exit;
 }
 ?>

@@ -62,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up - Foodies</title>
-    <link rel="stylesheet" href="/phpt/Foodies-WebDevAssignmet/assest/css/auth.css">
+    <link rel="stylesheet" href="assest/css/auth.css">
 </head>
 <body class="auth-page signup-page">
 

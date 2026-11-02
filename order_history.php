@@ -34,7 +34,7 @@ $result = $stmt->get_result();
     <title>My Orders - Foodies</title>
 
     <link rel="stylesheet"
-          href="/phpt/Foodies-WebDevAssignmet/assest/css/order_history.css">
+          href="assest/css/order_history.css">
 </head>
 <body class="order-history-page">
 

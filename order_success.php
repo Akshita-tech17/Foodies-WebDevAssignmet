@@ -34,7 +34,7 @@ if (!$order) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Successful - Foodies</title>
 
-    <link rel="stylesheet" href="/phpt/Foodies-WebDevAssignmet/assest/css/success.css">
+    <link rel="stylesheet" href="assest/css/success.css">
 </head>
 
 <body class="order-success-page">
